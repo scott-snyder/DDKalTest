@@ -21,11 +21,22 @@
 DDConeMeasLayer::DDConeMeasLayer(dd4hep::rec::ISurface* surf,
 				 Double_t   Bz,
 				 const Char_t  *name ) :
+  DDConeMeasLayer (surf,
+                   dynamic_cast<dd4hep::rec::ICone&>(*surf),
+                   Bz,
+                   name)
+{
+}
+                   
+DDConeMeasLayer::DDConeMeasLayer(dd4hep::rec::ISurface* surf,
+                                 dd4hep::rec::ICone& icone,
+				 Double_t   Bz,
+				 const Char_t  *name ) :
   DDVMeasLayer(  surf, Bz, name ) ,
-  Data(dynamic_cast<dd4hep::rec::ICone*>(surf)->z0()/dd4hep::mm ,
-       dynamic_cast<dd4hep::rec::ICone*>(surf)->radius0()/dd4hep::mm,
-       dynamic_cast<dd4hep::rec::ICone*>(surf)->z1()/dd4hep::mm,
-       dynamic_cast<dd4hep::rec::ICone*>(surf)->radius1()/dd4hep::mm ),
+  Data(icone.z0()/dd4hep::mm ,
+       icone.radius0()/dd4hep::mm,
+       icone.z1()/dd4hep::mm,
+       icone.radius1()/dd4hep::mm ),
   TCutCone(_R1*(_Z2-_Z1)/(_R2-_R1), 
    	   _R2*(_Z2-_Z1)/(_R2-_R1), 
    	   (_R2-_R1)/(_Z2-_Z1),
@@ -104,16 +115,16 @@ Bool_t DDConeMeasLayer::IsOnSurface(const TVector3 &xx) const {
   Double_t r   = xxc.Perp();
   Double_t z   = xxc.Z();
   Double_t s   = (r - GetTanA()*z) * (r + GetTanA()*z);
-  const Double_t kTol = 1.e-8;
+  const Double_t tol = 1.e-8;
 
 #if 0 
   std::cout << this->TVMeasLayer::GetName() << ":" << this->GetIndex() << ":" 
 	    << "s=" << s << " xx=(" << xx.X() << "," << xx.Y() << "," << xx.Z() << ")" 
-	    << "bool=" << (TMath::Abs(s) < kTol && ((xx.Z()-_Z1)*(xx.Z()-_Z2) <= 0.)) 
+	    << "bool=" << (TMath::Abs(s) < tol && ((xx.Z()-_Z1)*(xx.Z()-_Z2) <= 0.)) 
 	    << "_Z1=" << _Z1 << " _Z2=" << _Z2 << std::endl;
 #endif
 
-  return (TMath::Abs(s) < kTol && ((xx.Z()-_Z1)*(xx.Z()-_Z2) <= 0.));
+  return (TMath::Abs(s) < tol && ((xx.Z()-_Z1)*(xx.Z()-_Z2) <= 0.));
 } 
 
 Int_t DDConeMeasLayer::CalcXingPointWith(const TVTrack  &hel,
