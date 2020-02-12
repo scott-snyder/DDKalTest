@@ -1,0 +1,22 @@
+Bottom: 1b6b60ecdca3a324615d1e5a20450d248a682892
+Top:    1fc6063e22d36d7626822b9d0af991982aa57675
+Author: scott snyder <sss@karma>
+Date:   2020-02-12 04:06:35 -0500
+
+Refresh of cmake
+
+---
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 636d2ad..62f2e98 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -115,7 +115,7 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/this${PackageName}.sh
+ #--- install target-------------------------------------
+ 
+ 
+-FILE(GLOB hfiles "ILD/include/*.h")
++FILE(GLOB hfiles "include/DDKalTest/*.h")
+ INSTALL(FILES ${hfiles} 
+   DESTINATION include/${PackageName} 
+   )
