@@ -1,14 +1,13 @@
 {
   "version": 5,
-  "prev": "a36ff194417c2934063cd451b4ac62c42f2c49c0",
-  "head": "06fbdc1125eb8b68ff880a97ba9c12f219d63ec2",
+  "prev": "42f18d50db40858d1b3b8eb7760f1360cf51a967",
+  "head": "05d3a5af790211853a90ca4c2d0d10bd795233c3",
   "applied": [
     "gitignore",
     "cmake",
     "warn",
     "dyncast",
-    "ci",
-    "refresh-temp"
+    "ci"
   ],
   "unapplied": [],
   "hidden": [],
@@ -24,9 +23,6 @@
     },
     "gitignore": {
       "oid": "95744e8015f861552cb671c2a54ee63ad7afc518"
-    },
-    "refresh-temp": {
-      "oid": "06fbdc1125eb8b68ff880a97ba9c12f219d63ec2"
     },
     "warn": {
       "oid": "347605db78cfd7557011989b9c4af26e1268188f"
