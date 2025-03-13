@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "eee3649689809bdc7795ade89c3b2493b5f22fa3",
-  "head": "a9a5082d6388426121e732c1999a02e01962be5b",
+  "prev": "14fc526216138848a365f61fb4dc759d52f85346",
+  "head": "347605db78cfd7557011989b9c4af26e1268188f",
   "applied": [
     "gitignore",
     "cmake",
@@ -13,7 +13,7 @@
   "hidden": [],
   "patches": {
     "cmake": {
-      "oid": "3862e15781e9a593e3e001cb8c15b51ed0cc1785"
+      "oid": "c5f877af9b1caa81f013d5c978a1b70cf206ec5d"
     },
     "dyncast": {
       "oid": "2e4f053e3108e6b09a00c00d79f158d88b9a8485"
@@ -22,7 +22,7 @@
       "oid": "95744e8015f861552cb671c2a54ee63ad7afc518"
     },
     "warn": {
-      "oid": "a9a5082d6388426121e732c1999a02e01962be5b"
+      "oid": "347605db78cfd7557011989b9c4af26e1268188f"
     }
   }
 }
