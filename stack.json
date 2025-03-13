@@ -1,14 +1,15 @@
 {
   "version": 5,
-  "prev": "e98e51c48a7ac061aec0390e8e990098186e785c",
-  "head": "3a49f9aeb51a3c374b37d8f9fe299dc4c07282e9",
+  "prev": "e099645b3b774b47d334edc08c2aca34bf32410d",
+  "head": "0a617e68f6f0584f89a6bfedecce30fc97d58a1c",
   "applied": [
     "gitignore",
     "cmake",
-    "dyncast",
+    "dyncast"
+  ],
+  "unapplied": [
     "warn"
   ],
-  "unapplied": [],
   "hidden": [],
   "patches": {
     "cmake": {
