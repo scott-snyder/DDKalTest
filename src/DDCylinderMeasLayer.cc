@@ -46,7 +46,6 @@ DDCylinderMeasLayer::DDCylinderMeasLayer(dd4hep::rec::ISurface* surf,
 					 Double_t   Bz,
 					 const Char_t  *name ) :
   DDVMeasLayer(  surf, Bz, name ) ,
-  
   TCylinder(  icyl.radius()/dd4hep::mm ,
 	      surf->length_along_v()/dd4hep::mm / 2. , 
 	      icyl.center().x()/dd4hep::mm,
@@ -70,7 +69,7 @@ DDCylinderMeasLayer::DDCylinderMeasLayer(dd4hep::rec::ISurface* surf,
     _cellIDs.push_back( encoder.lowWord() ) ;
   }
 
-  fSortingPolicy = dynamic_cast<dd4hep::rec::ICylinder*>(surf)->radius()/dd4hep::mm + side * epsilon ;
+  fSortingPolicy = dynamic_cast<dd4hep::rec::ICylinder&>(*surf).radius()/dd4hep::mm + side * epsilon ;
 
   // assumptions made here: the cylinder runs parallel to z and v ...
   
