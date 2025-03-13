@@ -1,0 +1,7 @@
+Bottom: 4447476ebe42d8ec2f29ac012e18867045f0ac08
+Top:    4447476ebe42d8ec2f29ac012e18867045f0ac08
+Author: sss <sss@karma>
+Date:   2025-03-13 09:27:38 -0400
+
+Remove redundant dynamic_casts.
+Also get an exception if the cast fails, rather than a null pointer dereference.
