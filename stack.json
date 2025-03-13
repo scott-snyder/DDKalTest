@@ -1,16 +1,20 @@
 {
   "version": 5,
-  "prev": "dd9792c5b1626d8eee33073f23d8b03b54dc20b2",
-  "head": "e4ee857c76a0f06352b5b382c1736bef6e4d9516",
+  "prev": "4f4f705f4467b92a303c3872c2f3a79291e840c9",
+  "head": "05d3a5af790211853a90ca4c2d0d10bd795233c3",
   "applied": [
     "gitignore",
     "cmake",
     "warn",
-    "dyncast"
+    "dyncast",
+    "ci"
   ],
   "unapplied": [],
   "hidden": [],
   "patches": {
+    "ci": {
+      "oid": "05d3a5af790211853a90ca4c2d0d10bd795233c3"
+    },
     "cmake": {
       "oid": "c5f877af9b1caa81f013d5c978a1b70cf206ec5d"
     },

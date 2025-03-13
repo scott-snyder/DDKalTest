@@ -1,0 +1,9 @@
+Bottom: cb8a2436af36926841582ca3c3973b21b1f0d8ea
+Top:    cb8a2436af36926841582ca3c3973b21b1f0d8ea
+Author: sss <sss@karma>
+Date:   2025-03-13 09:45:09 -0400
+
+Remove centos7 CI jobs.
+
+Don't try to run CI for centos7.  Builds are no longer available
+for that platform.
