@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "05e4145653561838c8657cf00432ea3749ddf726",
-  "head": "63a8e0e9098185205894b32b0afd0e7781622f8e",
+  "prev": "eee3649689809bdc7795ade89c3b2493b5f22fa3",
+  "head": "a9a5082d6388426121e732c1999a02e01962be5b",
   "applied": [
     "gitignore",
     "cmake",
@@ -22,7 +22,7 @@
       "oid": "95744e8015f861552cb671c2a54ee63ad7afc518"
     },
     "warn": {
-      "oid": "63a8e0e9098185205894b32b0afd0e7781622f8e"
+      "oid": "a9a5082d6388426121e732c1999a02e01962be5b"
     }
   }
 }

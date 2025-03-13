@@ -1,6 +1,9 @@
 Bottom: 4447476ebe42d8ec2f29ac012e18867045f0ac08
 Top:    448ac25e9d73a076432d926d95b695dde9b484c5
 Author: scott snyder <sss@karma>
-Date:   2025-03-13 09:33:46 -0400
+Date:   2025-03-13 09:35:40 -0400
 
 Fix compilation warnings.
+
+ - Fix dangling reference to potentially-deleted temporary.
+ - Avoid shadowing class members with local variables.
