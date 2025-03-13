@@ -27,7 +27,7 @@ DDConeMeasLayer::DDConeMeasLayer(dd4hep::rec::ISurface* surf,
                    name)
 {
 }
-                   
+
 DDConeMeasLayer::DDConeMeasLayer(dd4hep::rec::ISurface* surf,
                                  dd4hep::rec::ICone& icone,
 				 Double_t   Bz,

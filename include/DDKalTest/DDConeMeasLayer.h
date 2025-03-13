@@ -101,7 +101,7 @@ private:
   DDConeMeasLayer(dd4hep::rec::ISurface* surf,
                   dd4hep::rec::ICone& icone,
 		  Double_t   Bz,
-		  const Char_t    *name = "DDConeMeasL") ; 
+		  const Char_t    *name = "DDConeMeasL") ;
 
   Double_t fsortingPolicy; // used for sorting the layers in to out
 };
