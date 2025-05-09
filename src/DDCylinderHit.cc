@@ -30,7 +30,7 @@ TKalMatrix DDCylinderHit::XvToMv(const TVector3 &xv, Double_t /*t0*/) const
 
 /** Print Debug information */
 
-void DDCylinderHit::DebugPrint(Option_t *) const
+void DDCylinderHit::DebugPrint(Option_t *, Int_t) const
 {
   cerr << "------------------- Site Info -------------------------" << endl;
   

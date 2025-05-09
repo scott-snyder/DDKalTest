@@ -27,7 +27,7 @@ TKalMatrix DDPlanarHit::XvToMv(const TVector3 &xv, Double_t /*t0*/) const
 
 /** Print Debug information */
 
-void DDPlanarHit::DebugPrint(Option_t *) const
+void DDPlanarHit::DebugPrint(Option_t *, Int_t) const
 {
   cerr << "------------------- Site Info -------------------------" << endl;
   
