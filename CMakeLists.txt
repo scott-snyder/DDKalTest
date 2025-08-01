@@ -1,4 +1,8 @@
-cmake_minimum_required(VERSION 3.3 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
+
+cmake_policy(SET CMP0167 NEW)
+cmake_policy(SET CMP0074 NEW)
+cmake_policy(SET CMP0144 NEW)
 
 #---------------------------
 set( PackageName DDKalTest )
