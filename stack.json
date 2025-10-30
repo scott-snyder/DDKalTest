@@ -1,7 +1,7 @@
 {
   "version": 5,
-  "prev": "2f584f4f28da5a896270594646dcadd88d184bab",
-  "head": "169e3d6e6eecdac303ffb4ccf11637f9cd76bcc5",
+  "prev": "89150ad8c135ccdaf8bffa50dc479ea6c6228a91",
+  "head": "e7e42e18af200b304d1c1afbd338e13145aa73d3",
   "applied": [
     "gitignore",
     "ci",
@@ -25,7 +25,7 @@
       "oid": "90928def3fb29e809b00ed50b78bb11c201c6008"
     },
     "cmakewarn": {
-      "oid": "6b05de19cb51f755c7b6f18cef73d40f5e94cb15"
+      "oid": "9003c38156dea611ff76bae5950567ececbf9e44"
     },
     "dyncast": {
       "oid": "0dbda3325e12f9f62066f9c0836507c6aa4aa54e"
@@ -34,7 +34,7 @@
       "oid": "95744e8015f861552cb671c2a54ee63ad7afc518"
     },
     "nosystem": {
-      "oid": "169e3d6e6eecdac303ffb4ccf11637f9cd76bcc5"
+      "oid": "e7e42e18af200b304d1c1afbd338e13145aa73d3"
     },
     "warn": {
       "oid": "0392284f204d0f73a640d07eca34a40540268860"
