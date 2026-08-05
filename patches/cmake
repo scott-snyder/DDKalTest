@@ -1,8 +1,0 @@
-Bottom: 87e4adba26431047412ac90239e488cb50c06577
-Top:    87e4adba26431047412ac90239e488cb50c06577
-Author: scott snyder <sss@karma>
-Date:   2026-08-05 14:38:38 -0400
-
-Fix list of headers to install in CMakeLists.txt
-
-The path of headers to install was pointing at a nonexistent directory.  Fix.

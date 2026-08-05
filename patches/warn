@@ -1,9 +1,0 @@
-Bottom: 87e4adba26431047412ac90239e488cb50c06577
-Top:    87e4adba26431047412ac90239e488cb50c06577
-Author: scott snyder <sss@karma>
-Date:   2026-08-05 14:39:30 -0400
-
-Fix compilation warnings.
-
- - Fix dangling reference to potentially-deleted temporary.
- - Avoid shadowing class members with local variables.
