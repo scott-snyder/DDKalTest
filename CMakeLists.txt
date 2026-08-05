@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.23 FATAL_ERROR)
 
+cmake_policy(SET CMP0167 NEW)
+
 #---------------------------
 set( PackageName DDKalTest )
 #---------------------------
@@ -59,14 +61,14 @@ FIND_PACKAGE( aidaTT REQUIRED )
 FIND_PACKAGE( GSL REQUIRED )
 
 #NB: need ROOT before KalTest (needed on case sensitive systems and classes that differ only in capitalization)
-include_directories( ${DD4hep_INCLUDE_DIRS}
+include_directories( SYSTEM ${DD4hep_INCLUDE_DIRS}
   ${ROOT_INCLUDE_DIRS}
 )
       
 FOREACH( pkg KalTest LCIO streamlog aidaTT GSL)
 
   IF( ${pkg}_FOUND )
-    INCLUDE_DIRECTORIES( ${${pkg}_INCLUDE_DIRS} )
+    INCLUDE_DIRECTORIES( SYSTEM ${${pkg}_INCLUDE_DIRS} )
     LINK_LIBRARIES( ${${pkg}_LIBRARIES} )
   ENDIF()
 
